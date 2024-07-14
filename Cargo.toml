@@ -1,0 +1,15 @@
+[package]
+name = "random-document"
+version = "1.0.0-dev.15"
+edition = "2021"
+rust-version = "1.76"
+authors = [
+  "Evgeny Fomin <evgeny.fomin@dash.org>",
+  "Ivan Shumkov <shumkov@dash.org>",
+]
+
+[dependencies]
+json-schema-faker = { git = "https://github.com/fominok/json-schema-faker-rs", rev = "2dd1cf7" }
+dpp = { git = "https://github.com/dashpay/platform/rs-dpp", rev = "f94d9605cdd91f6b9934a719fb6eb448d960420f", features = ["system_contracts", "document-value-conversion"] }
+platform-value = { git = "https://github.com/dashpay/platform/rs-platform-value", rev = "f94d9605cdd91f6b9934a719fb6eb448d960420f", features = ["json"]}
+anyhow = "1.0.86"
